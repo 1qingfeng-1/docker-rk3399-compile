@@ -7,7 +7,8 @@ FROM ubuntu:16.04
 #设置中文
 ENV LANG C.UTF-8
 
-WORKDIR /root
+WORKDIR /opt
+VOLUME /opt
 
 RUN apt-get update \
         && apt-get install -y  vim lrzsz curl net-tools inetutils-ping zip \
@@ -16,6 +17,9 @@ RUN apt-get update \
         device-tree-compiler gcc-aarch64-linux-gnu mtools parted libudev-dev \
         libusb-1.0-0-dev gcc-4.8-multilib-arm-linux-gnueabihf gcc-arm-linux-gnueabihf \
         libssl-dev gcc-aarch64-linux-gnu repo \
+        #设置git配置
+        &&git config --global user.email "you@example.com" \
+        &&git config --global user.name "Your Name" \
                 # 用完包管理器后安排打扫卫生可以显著的减少镜像大小
                 && apt-get clean \
                 && apt-get autoclean \
