@@ -15,7 +15,7 @@ RUN apt-get update \
         && apt-get install -y git-core gitk git-gui gcc-arm-linux-gnueabihf u-boot-tools \
         device-tree-compiler gcc-aarch64-linux-gnu mtools parted libudev-dev \
         libusb-1.0-0-dev gcc-4.8-multilib-arm-linux-gnueabihf gcc-arm-linux-gnueabihf \
-        libssl-dev gcc-aarch64-linux-gnu \
+        libssl-dev gcc-aarch64-linux-gnu repo \
                 # 用完包管理器后安排打扫卫生可以显著的减少镜像大小
                 && apt-get clean \
                 && apt-get autoclean \
