@@ -16,7 +16,7 @@ RUN apt-get update \
         && apt-get install -y git-core gitk git-gui gcc-arm-linux-gnueabihf u-boot-tools \
         device-tree-compiler gcc-aarch64-linux-gnu mtools parted libudev-dev \
         libusb-1.0-0-dev gcc-4.8-multilib-arm-linux-gnueabihf gcc-arm-linux-gnueabihf \
-        libssl-dev gcc-aarch64-linux-gnu repo \
+        libssl-dev gcc-aarch64-linux-gnu repo build-essential\
         #设置git配置
         &&git config --global user.email "you@example.com" \
         &&git config --global user.name "Your Name" \
