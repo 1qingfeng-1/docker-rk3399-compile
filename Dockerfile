@@ -19,7 +19,7 @@ RUN apt-get update \
         gcc-aarch64-linux-gnu g+conf autoconf autotools-dev libsigsegv2 m4 intltool libdrm-dev curl sed make \
         binutils build-essential gcc g++ bash patch gzip bzip2 perl tar cpio python unzip rsync file bc wget \
         libncurses5 libqt4-dev libglib2.0-dev libgtk2.0-dev libglade2-dev cvs git mercurial rsync openssh-client \
-        subversion asciidoc w3m dblatex graphviz python-matplotlib  libssl-dev texinfo \
+        subversion asciidoc w3m dblatex graphviz python-matplotlib libc6-i386 libssl-dev texinfo \
         liblz4-tool genext2fs lib32stdc++6 \
         #设置git配置
         &&git config --global user.email "you@example.com" \
