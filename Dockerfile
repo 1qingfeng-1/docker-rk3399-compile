@@ -10,7 +10,7 @@ ENV LANG C.UTF-8
 RUN RUN sed -i s@/archive.ubuntu.com/@/mirrors.tuna.tsinghua.edu.cn/@g /etc/apt/sources.list
 
 RUN apt-get update \
-        && apt-get install -y  vim lrzsz curl net-tools inetutils-ping zip \
+        && apt-get install -y git vim lrzsz curl net-tools inetutils-ping zip \
         #安装编译工具
         && sudo apt-get install -y repo git-core gitk git-gui gcc-arm-linux-gnueabihf u-boot-tools device-tree-compiler \
         gcc-aarch64-linux-gnu mtools parted libudev-dev libusb-1.0-0-dev python-linaro-image-tools \
